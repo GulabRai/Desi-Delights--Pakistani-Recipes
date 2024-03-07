@@ -2,133 +2,144 @@
 
 /* Content Information */
 .content-information {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/612d4825ee7c3b7ba3e215b7/ae22bf6f-c6ae-4061-a015-e3fbfad795ad/Pakistani+cuision.png');
-    background-size: cover;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .recipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-.recipe-title {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #fff; /* White text color */
-    padding: 10px; /* Adjust as needed */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  .recipe-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin-top: 30px;
+  background-image: url('Pakistani+cuision.png');
+  background-size: cover;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
 }
-.view-button {
-    display: block;
-    text-align: center;
-    margin-top: 27px;
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .view-button:hover {
-    background-color: #45a049;
-  }
-  
-  .recipe-card {
-    width: 250px;
-    height: 350px;
-    perspective: 1000px;
-    margin: 20px;
-    margin-top: 70px;
-  }
-  
-  .recipe-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .recipe-card .recipe-info {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-  
-  .recipe-card:hover .recipe-info {
-    transform: rotateY(180deg);
-  }
-  
-  .recipe-card .recipe-info h2,
-  .recipe-card .recipe-info ul {
-    backface-visibility: hidden;
-  }
-  
-  .recipe-card .recipe-info ul {
-    transform: rotateY(180deg);
-    list-style-type: none;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .recipe-card .recipe-info ul li {
-    margin-bottom: 10px;
-  }
-  
 
- /* Add ingredient highlighting */
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  color: #fff;
+  /* White text color */
+  padding: 10px;
+  /* Adjust as needed */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+.recipe-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  /* Adjust max-width as needed */
+  margin-top: 30px;
+}
+
+.view-button {
+  display: block;
+  text-align: center;
+  margin-top: 27px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.view-button:hover {
+  background-color: #45a049;
+}
+
+.recipe-card {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 20px;
+  margin-top: 70px;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-card .recipe-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.recipe-card:hover .recipe-info {
+  transform: rotateY(180deg);
+}
+
+.recipe-card .recipe-info h2,
+.recipe-card .recipe-info ul {
+  backface-visibility: hidden;
+}
+
+.recipe-card .recipe-info ul {
+  transform: rotateY(180deg);
+  list-style-type: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card .recipe-info ul li {
+  margin-bottom: 10px;
+}
+
+
+/* Add ingredient highlighting */
 .recipe-info:hover .ingredient-list li {
-    background-color: #f2f2f2; /* Change background color */
-    border-left: 4px solid #4CAF50; /* Add border */
-    padding-left: 8px; /* Add padding to adjust for the border */
+  background-color: #f2f2f2;
+  /* Change background color */
+  border-left: 4px solid #4CAF50;
+  /* Add border */
+  padding-left: 8px;
+  /* Add padding to adjust for the border */
 }
 
 /* Add styles for the checkboxes */
 .recipe-info .ingredient-list input[type="checkbox"] {
-    display: none; /* Hide the default checkbox */
+  display: none;
+  /* Hide the default checkbox */
 }
 
 /* Style the custom checkbox appearance */
-.recipe-info .ingredient-list input[type="checkbox"] + label span:before {
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    margin-right: 0.5em;
-    vertical-align: middle;
-    transition: background-color 0.3s, border-color 0.3s;
+.recipe-info .ingredient-list input[type="checkbox"]+label span:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 /* Change background color and border color when checkbox is checked */
-.recipe-info .ingredient-list input[type="checkbox"]:checked + label span:before {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+.recipe-info .ingredient-list input[type="checkbox"]:checked+label span:before {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
 }
 
 /* Adjust text style for better readability */
 .recipe-info .ingredient-list label span {
-    vertical-align: middle;
+  vertical-align: middle;
 }
